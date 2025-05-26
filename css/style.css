@@ -58,6 +58,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--bamboo);
   color: var(--text-dark);
+  font-family: 'Quicksand', sans-serif;
 }
 
 header {
@@ -181,18 +182,22 @@ header p {
 
 
 
-/* san pham */
+
 /* ======= SẢN PHẨM ======= */
 #san-pham {
-  padding: 40px 20px;
-  background: #f9f9f9;
+ padding: 40px 20px;
+  background-color: var(--green);
+  color: white;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
 }
 
 #san-pham h2 {
-  text-align: center;
-  font-size: 32px;
+   text-align: center;
+  font-size: 36px;
   margin-bottom: 40px;
-  color: #333;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .product {
