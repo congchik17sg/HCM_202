@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ Tre Thủ Công</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#gioi-thieu">Giới thiệu</a></li>
+    <li><a href="#lich-su">Lịch sử</a></li>
+    <li><a href="#san-pham">Sản phẩm</a></li>
+    <li><a href="#lien-he">Liên hệ</a></li>
+  </ul>
+</nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Giỏ Tre Thủ Công</h1>
+    <p>Vẻ đẹp truyền thống, thân thiện với thiên nhiên</p>
+  </header>
+
+  <!-- CONTENT -->
+  
+
+  <section id="gioi-thieu" class="section intro-section">
+  <div class="intro-image-wrapper">
+    <img src="image/gioithieu.jpg" alt="Giới thiệu" class="intro-img">
+    <div class="intro-overlay">
+      <h2 class="intro-heading">Giới Thiệu</h2>
+      <p class="intro-text">
+        Giỏ tre thủ công được tạo ra từ đôi bàn tay tài hoa của những nghệ nhân làng nghề. Mỗi sản phẩm là một câu chuyện, một nét văn hóa, và một phần ký ức tuổi thơ thân thuộc. Với nguyên liệu hoàn toàn tự nhiên, thân thiện với môi trường, chúng tôi mong muốn mang đến cho bạn sự gần gũi, mộc mạc nhưng không kém phần tinh tế.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- THỐNG KÊ -->
+<section class="stats-section">
+  <div class="stat-box">
+    <div class="icon"><i class="fa fa-eye"></i></div>
+    <div class="count" id="visit-count">0</div>
+    <div>Lượt truy cập</div>
+  </div>
+  <div class="stat-box">
+    <div class="icon" id="buy-icon" style="cursor: pointer;"><i class="fa fa-shopping-cart"></i></div>
+    <div class="count" id="buy-count">0</div>
+    <div>Sẵn sàng mua</div>
+  </div>
+</section>
+<div id="busuanzi_container_site_pv" style="display:none;">
+  <span id="busuanzi_value_site_pv">0</span>
+</div>
+
+
+
+
+
+
+<main class="history-wrapper">
+    <!-- Cột ảnh -->
+    <div class="image-sidebar">
+      <img src="image/nghenhan.jpg" alt="Ảnh 1" data-index="0">
+      <img src="image/nghenhan2.jpg" alt="Ảnh 2" data-index="1">
+      <img src="image/nghenhan3.jpg" alt="Ảnh 3" data-index="2">
+      <img src="image/nghenhan4.jpg" alt="Ảnh 4" data-index="3">
+    </div>
+
+    <!-- Phần lịch sử -->
+    <section class="history-section" id="lich-su">
+      <div class="history-overlay"></div>
+      <div class="history-content">
+        <h2>Lịch Sử Nghề Đan Tre</h2>
+        <div class="history-text" id="history-text">
+          <p>Nội dung đoạn 1...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox xem ảnh -->
+    <div class="modal" id="image-modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+
+
+
+
+<!-- SẢN PHẨM -->
+<section id="san-pham" class="section">
+  <h2>Sản Phẩm</h2>
+
+  <!-- Sản phẩm 1 -->
+  <div class="product">
+    <div class="product-images">
+      <img src="image/gio1.png" class="slide active">
+      <img src="image/gio12.webp" class="slide">
+      <img src="image/gio13.webp" class="slide">
+      <img src="image/gio14.webp" class="slide">
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
+    </div>
+    <div class="product-info">
+      <h3>Giỏ hoa đan mây có quai Bella</h3>
+      <p class="price">150.000đ</p>
+      <p>✔️ Làm thủ công từ tre chọn lọc.</p>
+      <p>✔️ Bền đẹp, thân thiện môi trường.</p>
+      <p>✔️ Phù hợp đựng đồ, trang trí.</p>
+    </div>
+  </div>
+
+  <!-- Sản phẩm 2 -->
+  <div class="product">
+    <div class="product-images">
+      <img src="image/sp2-1.jpg" class="slide active">
+      <img src="image/sp2-2.jpg" class="slide">
+      <img src="image/sp2-3.jpg" class="slide">
+      <img src="image/sp2-4.jpg" class="slide">
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
+    </div>
+    <div class="product-info">
+      <h3>Giỏ Tre Quà Tặng</h3>
+      <p class="price">180.000đ</p>
+      <p>✔️ Thiết kế nhỏ gọn, xinh xắn.</p>
+      <p>✔️ Phù hợp làm quà tặng đặc biệt.</p>
+      <p>✔️ Được xử lý mối mọt kỹ càng.</p>
+    </div>
+  </div>
+
+  <!-- Sản phẩm 3 -->
+  <div class="product">
+    <div class="product-images">
+      <img src="image/sp3-1.jpg" class="slide active">
+      <img src="image/sp3-2.jpg" class="slide">
+      <img src="image/sp3-3.jpg" class="slide">
+      <img src="image/sp3-4.jpg" class="slide">
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
+    </div>
+    <div class="product-info">
+      <h3>Giỏ Tre Trang Trí</h3>
+      <p class="price">200.000đ</p>
+      <p>✔️ Trang trí không gian nhà cửa.</p>
+      <p>✔️ Màu sắc tự nhiên, nhẹ nhàng.</p>
+      <p>✔️ Bề mặt nhẵn, dễ vệ sinh.</p>
+    </div>
+  </div>
+
+  <!-- Sản phẩm 4 -->
+  <div class="product">
+    <div class="product-images">
+      <img src="image/sp4-1.jpg" class="slide active">
+      <img src="image/sp4-2.jpg" class="slide">
+      <img src="image/sp4-3.jpg" class="slide">
+      <img src="image/sp4-4.jpg" class="slide">
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
+    </div>
+    <div class="product-info">
+      <h3>Giỏ Tre Cao Cấp</h3>
+      <p class="price">250.000đ</p>
+      <p>✔️ Dùng để đựng quà cưới, lễ.</p>
+      <p>✔️ Kiểu dáng sang trọng, tinh xảo.</p>
+      <p>✔️ Phù hợp cả hiện đại và truyền thống.</p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- LIÊN HỆ -->
+<main class="container">
+  <section id="lien-he" class="section">
+    <h2>Liên hệ</h2>
+    <p>Liên hệ với chúng tôi qua Zalo hoặc Facebook để đặt hàng và biết thêm chi tiết.</p>
+  </section>
+</main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Giỏ Tre Việt. Bảo tồn giá trị truyền thống.
+  </footer>
+<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
