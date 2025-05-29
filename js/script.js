@@ -2,12 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const imageElements = document.querySelectorAll('.image-sidebar img');
   const textContainer = document.getElementById('history-text');
   const historySection = document.querySelector('.history-section');
-
+  const modal = document.getElementById('image-modal');
+  const modalImg = document.getElementById('modal-img');
+  
   const historyTexts = [
-    "Nội dung đoạn 1: Nghề đan tre có từ hàng nghìn năm trước, gắn liền với đời sống nông thôn...",
-    "Nội dung đoạn 2: Qua các triều đại phong kiến, đan tre là một nghề truyền thống phổ biến...",
-    "Nội dung đoạn 3: Vào thời kỳ hiện đại, nghề từng bị mai một nhưng đã hồi sinh nhờ các chương trình bảo tồn...",
-    "Nội dung đoạn 4: Ngày nay, sản phẩm tre đan không chỉ phục vụ nội địa mà còn được xuất khẩu rộng rãi..."
+    "Khởi nguồn Nghề đan tre đã xuất hiện từ hàng nghìn năm trước,gắn liền với đời sống lao động và sinh hoạt của người dân vùng nông thôn. Từ những vật dụng thô sơ như rổ, rá, giỏ... làm từ tre, con người đã biết tận dụng loại vật liệu sẵn có trong tự nhiên để phục vụ nhu cầu hàng ngày. Đây là giai đoạn nghề đan tre hình thành một cách tự phát, phản ánh sự sáng tạo và khéo léo của người xưa trong việc chinh phục thiên nhiên.",
+    "Thời phong kiến Qua các triều đại phong kiến, nghề đan tre dần được nâng tầm trở thành một nghề thủ công truyền thống phổ biến. Không chỉ là phương tiện mưu sinh của nhiều gia đình, sản phẩm tre đan còn được sử dụng rộng rãi trong các sinh hoạt lễ hội, tín ngưỡng và đời sống cung đình. Nghề đan tre bắt đầu có sự phân hóa kỹ thuật, mẫu mã, và nhiều làng nghề đan tre nổi tiếng cũng hình thành trong giai đoạn này.",
+    "Thời hiện đại – mai một và hồi sinh Bước vào thời kỳ hiện đại, cùng với sự phát triển của công nghiệp và các vật liệu nhân tạo, nghề đan tre từng rơi vào tình trạng mai một. Nhiều làng nghề truyền thống bị lãng quên, thợ thủ công chuyển sang nghề khác để mưu sinh. Tuy nhiên, nhờ vào các chương trình bảo tồn văn hóa phi vật thể và sự quan tâm của chính quyền cùng các tổ chức văn hóa, nghề đan tre đã có cơ hội hồi sinh. Lớp trẻ ngày nay cũng bắt đầu quay lại học nghề, kế thừa tinh hoa của cha ông.",
+    "Phát triển và hội nhập Ngày nay, nghề đan tre không chỉ phục vụ nhu cầu trong nước mà còn vươn ra thị trường quốc tế. Sản phẩm tre đan được xuất khẩu sang nhiều quốc gia, được đánh giá cao bởi tính thẩm mỹ, độ bền và giá trị văn hóa đặc sắc. Nhờ ứng dụng công nghệ mới và sáng tạo trong thiết kế, nghề đan tre đã và đang khẳng định vị thế trong xu thế phát triển bền vững, thân thiện với môi trường."
   ];
 
   const historyImageURLs = [
@@ -16,6 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     "image/nghenhan3.jpg",
     "image/nghenhan4.jpg"
   ];
+
+  // ✅ Hiển thị mặc định hình số 1 và đoạn văn số 1
+  const defaultIndex = 0;
+  historySection.style.backgroundImage = `url(${historyImageURLs[defaultIndex]})`;
+  textContainer.innerHTML = `<p>${historyTexts[defaultIndex]}</p>`;
 
   imageElements.forEach((img, index) => {
     img.addEventListener('mouseover', () => {

@@ -179,6 +179,10 @@ header p {
   font-size: 1.5em;
   font-weight: bold;
 }
+#busuanzi_container_site_pv {
+  display: none !important;
+}
+
 
 
 
@@ -436,13 +440,115 @@ header p {
 
 
 
+#lien-he {
+  margin: 40px auto;
+  padding: 20px 40px;
+  background-color: transparent; /* hoặc bạn có thể đặt màu nền khác nếu muốn */
+  border-radius: 0;
+  box-shadow: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#lien-he h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Container 2 cột dãn cực rộng */
+.contact-columns {
+  display: flex;
+  justify-content: space-between; /* đẩy 2 cột sát 2 mép */
+  width: 100%; /* chiếm hết vùng chứa */
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Cột trái */
+.col-left {
+  width: 40%; /* chỉ chiếm 40% */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+}
+
+/* Cột phải */
+.col-right {
+  width: 40%; /* 40% */
+}
+
+.col-right ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.col-right ul li {
+  margin-bottom: 15px;
+}
+
+.col-right ul li strong {
+  color: #2980b9;
+}
+
+.col-right a {
+  color: #2980b9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.col-right a:hover,
+.col-right a:focus {
+  color: #1c5980;
+  text-decoration: underline;
+}
+
+.col-right ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.col-right ul li i {
+  font-size: 1.5rem;
+}
+
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  #lien-he {
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  .contact-columns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .col-left,
+  .col-right {
+    width: 100%;
+    font-size: 1rem;
+    text-align: left;
+  }
+}
 
 
 
 
 
 
-/* Section dùng cho từng nhóm nội dung */
+/* Section dùng cho từng nhóm nội dung
 .section {
   margin-bottom: 60px;
 }
@@ -458,7 +564,12 @@ header p {
 .section p {
   font-size: 1.1em;
   line-height: 1.6;
-}
+} */
+
+
+
+
+
 
 
 
